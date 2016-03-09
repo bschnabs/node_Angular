@@ -11,7 +11,7 @@ var LoginController = function($scope, $location, LoginFactory, SessionService){
             SessionService.token = response.access_token;
             $location.path('/');
         }, function(response){
-            $scope.loginForm.errorMessage = response.error_description;
+            $scope.loginForm.errorMessage = response;
         });
     }
 }
