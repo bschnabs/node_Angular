@@ -1,4 +1,4 @@
-var Node_Angular_App = angular.module('Node_Angular_App', ['ngRoute']);
+var Node_Angular_App = angular.module('Node_Angular_App', ['ngRoute', 'ngCookies']);
 
 Node_Angular_App.controller('BaseController', BaseController);
 Node_Angular_App.controller('LoginController', LoginController);
